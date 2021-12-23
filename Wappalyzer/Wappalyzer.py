@@ -397,6 +397,7 @@ class Wappalyzer:
         # Search the easiest things first and save the full-text search of the
         # HTML for last
 
+        for patt
         for pattern in app['url']:
             if pattern['regex'].search(webpage.url):
                 self._set_detected_app(app, 'url', pattern, webpage.url)
